@@ -1,0 +1,456 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Regular.otf);
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    user-select: none;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+/* ================LOADER ================= */
+#loader{
+    width: 100%;
+    height: 100%;
+    background-color:rgb(239, 227, 227);
+    position: fixed;
+    z-index: 999999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    overflow: hidden;
+}
+#loader h2{
+    font-family: gilroy;
+    font-size: 5vw;
+    letter-spacing: 20px;
+    color: black;
+}
+#loader i{
+    display: inline-block;
+    font-size: 5vw;
+    margin-left: -10px;
+    color: royalblue;
+}
+#loader #box{
+    height: 32%;
+    width: 20%;
+    /* background-color: royalblue; */
+    position: relative;
+}
+
+/* For N Letter */
+#loader .n1-line{
+    background-color: red;
+    border-radius: 10px;
+    z-index: 1;
+}
+#loader #n11{
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    transform-origin: bottom;
+    left: 0;
+    bottom: 90px;
+    /* z-index: 2; */
+}
+#loader #n12{
+    width: 10px;
+    height: 385px;
+    transform: rotate(-52deg);
+    position: absolute;
+    top: 1px;
+    left: -2.5px;
+    transform-origin: top;
+    /* z-index: 1; */
+}
+
+#loader #n13{
+    width: 10px;
+    height: 155px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+
+/* For I leter */
+#loader .i-line{
+    width: 10px;
+    height: 0px;
+    /* height: 120px; */
+    border-radius: 10px;
+    background-color:royalblue;
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+    /* transform: translate(0,-50%); */
+    z-index: 2;
+}
+
+
+/* For L Letter */
+#loader .l-line{
+    background-color: teal;
+    z-index: 3;
+}
+#loader #l1{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top: -.5px;
+    z-index: 3;
+    width: 10px;
+    height: 85%;
+}
+#loader #l2{
+    /* background-color: red; */
+    position: absolute;
+    top: 83.1%;
+    left: .1px;
+    width: 35px;
+    height: 40px;
+    transform-origin: left;
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 50px;
+}
+#loader #l3{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 79.5%;
+    left: 10px;
+    width: 35px;
+    height: 40px;
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 50px;
+}
+#loader #l4{
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0;
+    left: 31px;
+    z-index: 3;
+    width: 90%;
+    height: 9px;
+}
+
+/* For E letter */
+#loader .e-line{
+    background-color: rgb(74, 1, 1) ;
+    z-index: 4;
+}
+#loader #e1{
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    right:50%;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+#loader #e2{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    top: 0;
+    /* z-index: 3; */
+    width: 10px;
+    height: 85.5%;
+}
+#loader #e3{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 79.6%;
+    left: 10px;
+    width: 35px;
+    height: 40px;
+    border-bottom-left-radius: 38px;
+    border-top-right-radius: 50px;
+    z-index: 5;
+}
+#loader #e4{
+    /* background-color: orange; */
+    position: absolute;
+    top: 83.5%;
+    left: 0;
+    width: 35px;
+    height: 40px;
+    transform-origin: left;
+    border-bottom-left-radius: 45px;
+    border-top-right-radius: 50px;
+}
+#loader #e5{
+    width: 40%;
+    height: 9px;
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    border-radius: 10px;
+}
+
+#loader #e6{
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    top: 46%;
+    left:0;
+    border-radius: 10px;
+}
+
+
+/* For N Letter */
+#loader .n2-line{
+    background-color: aqua ;
+    z-index: 5;
+    border-radius: 10px;
+}
+#loader #n21{
+    width: 10px;
+    height: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+#loader #n22{
+    width: 10px;
+    height: 190px;
+    transform: rotate(-52deg);
+    position: absolute;
+    top: 1px;
+    left: -2.5px;
+    transform-origin: top;
+    /* z-index: 1; */
+}
+#loader #n23{
+    width: 10px;
+    /* height: 0px; */
+    height: 50%;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+}
+
+/*  For D Letter */
+#loader .d-line{
+    background-color: green;
+    border-radius: 10px;
+    z-index: 6;
+}
+#loader #d1 {
+    width: 10px;
+    height: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
+}
+
+#loader #d2{
+    width: 45%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left:47%;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+#loader #d3{
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 88.5%;
+    width: 35px;
+    height: 40px;
+    /* border-radius: 0; */
+    transform-origin: left;
+    /* border-bottom-left-radius: 45px; */
+    border-top-right-radius: 50px;
+}
+#loader #d4{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 10px;
+    left: 85.6%;
+    width: 35px;
+    height: 40px;
+    /* border-radius: 0; */
+    /* border-bottom-left-radius: 45px; */
+    border-top-right-radius: 50px;
+}
+#loader #d5{
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 13.5%;
+}
+#loader #d6{
+    /* background-color: red; */
+    position: absolute;
+    top: 33.4%;
+    right: 0;
+    width: 35px;
+    height: 40px;
+    transform-origin: left;
+    border-bottom-right-radius: 100px;
+    /* border-top-left-radius: 0px; */
+}
+#loader #d7{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 29.5%;
+    right: 10px;
+    width: 35px;
+    height: 40px;
+    border-bottom-right-radius: 100px;
+    /* border-top-left-radius: 0px; */
+}
+
+#loader #d8{
+    width: 45%;
+    height: 10px;
+    position: absolute;
+    top: 46%;
+    right: 25px;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+
+
+
+/* For R Letter */
+#loader .r-line{
+    background-color: orange;
+    z-index: 7;
+    border-radius: 10px;
+}
+#loader #r1{
+    width: 10px;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 47%;
+}
+#loader #r2{
+    width: 45%;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left:47%;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+#loader #r3{
+    /* background-color: red; */
+    position: absolute;
+    top: 0;
+    left: 88.5%;
+    width: 35px;
+    height: 40px;
+    /* border-radius: 0; */
+    transform-origin: left;
+    /* border-bottom-left-radius: 45px; */
+    border-top-right-radius: 30px;
+}
+#loader #r4{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 10px;
+    left: 85.6%;
+    width: 35px;
+    height: 40px;
+    /* border-radius: 0; */
+    /* border-bottom-left-radius: 45px; */
+    border-top-right-radius: 50px;
+}
+#loader #r5{
+    width: 10px;
+    height: 60px;
+    position: absolute;
+    right: 0;
+    top: 13.5%;
+}
+#loader #r6{
+    /* background-color: red; */
+    position: absolute;
+    top: 33.4%;
+    right: 0;
+    width: 35px;
+    height: 40px;
+    transform-origin: left;
+    border-bottom-right-radius: 80px;
+    /* border-top-left-radius: 0px; */
+}
+#loader #r7{
+    background-color: rgb(239, 227, 227);
+    position: absolute;
+    top: 29.5%;
+    right: 10px;
+    width: 35px;
+    height: 40px;
+    border-bottom-right-radius: 100px;
+    /* border-top-left-radius: 0px; */
+}
+
+#loader #r8{
+    width: 45%;
+    height: 10px;
+    position: absolute;
+    top: 46%;
+    right: 25px;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+#loader #r9{
+    width: 11px;
+    height: 192px;
+    transform: rotate(-52deg);
+    position: absolute;
+    top: 50%;
+    left: 48.5%;
+    transform-origin: top;
+    /* z-index: 1; */
+}
+
+/* For A letter */
+#loader .a-line{
+    background-color:rgb(251, 0, 255);
+    z-index: 8;
+    border-radius: 10px;
+}
+#loader #a1{
+    position: absolute;
+    border-radius: 10px;
+    left: 0;
+    bottom:36.5px;
+    width: 10px;
+    height: 85%;
+}
+#loader #a2{
+    width: 10px;
+    height: 385px;
+    transform: rotate(-52deg);
+    position: absolute;
+    top: 1px;
+    left: -2.5px;
+    transform-origin: top;
+    /* z-index: 1; */
+}
+#loader #a3{
+    width: 50%;
+    height: 10px;
+    position: absolute;
+    top: 46%;
+    left:1px;
+    border-radius: 10px;
+    /* z-index: 4; */
+}
+
