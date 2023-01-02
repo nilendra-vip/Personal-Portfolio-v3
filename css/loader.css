@@ -245,15 +245,8 @@ html,body{
     border-radius: 10px;
     z-index: 6;
 }
-#loader #d1 {
-    width: 10px;
-    height: 50%;
-    position: absolute;
-    bottom: 50%;
-    left: 47%;
-}
 
-#loader #d2{
+#loader #d1{
     width: 45%;
     height: 10px;
     position: absolute;
@@ -262,7 +255,7 @@ html,body{
     border-radius: 10px;
     /* z-index: 4; */
 }
-#loader #d3{
+#loader #d2{
     /* background-color: red; */
     position: absolute;
     top: 0;
@@ -274,7 +267,7 @@ html,body{
     /* border-bottom-left-radius: 45px; */
     border-top-right-radius: 50px;
 }
-#loader #d4{
+#loader #d3{
     background-color: rgb(239, 227, 227);
     position: absolute;
     top: 10px;
@@ -285,14 +278,14 @@ html,body{
     /* border-bottom-left-radius: 45px; */
     border-top-right-radius: 50px;
 }
-#loader #d5{
+#loader #d4{
     width: 10px;
     height: 60px;
     position: absolute;
     right: 0;
     top: 13.5%;
 }
-#loader #d6{
+#loader #d5{
     /* background-color: red; */
     position: absolute;
     top: 33.4%;
@@ -303,7 +296,7 @@ html,body{
     border-bottom-right-radius: 100px;
     /* border-top-left-radius: 0px; */
 }
-#loader #d7{
+#loader #d6{
     background-color: rgb(239, 227, 227);
     position: absolute;
     top: 29.5%;
@@ -314,7 +307,7 @@ html,body{
     /* border-top-left-radius: 0px; */
 }
 
-#loader #d8{
+#loader #d7{
     width: 45%;
     height: 10px;
     position: absolute;
@@ -322,6 +315,13 @@ html,body{
     right: 25px;
     border-radius: 10px;
     /* z-index: 4; */
+}
+#loader #d8 {
+    width: 10px;
+    height: 50%;
+    position: absolute;
+    bottom: 50%;
+    left: 47%;
 }
 
 

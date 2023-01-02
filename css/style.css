@@ -169,6 +169,7 @@ button,input{
 .social_share{
     font-size: 2vw;
     cursor: pointer;
+    color: red;
 }
 /* Active Link */
 .nav_link.active-link, .nav_link:hover{
@@ -194,7 +195,7 @@ button,input{
 
 /*===== Home Section =====*/
 .home{
-    background-image: url(../img/nnnn.png);
+    background-image: url(../img/f.png);
     background-size: 60%;
     background-repeat: no-repeat;
     background-position: bottom right;
@@ -434,9 +435,10 @@ button,input{
     color: white;
 }
 
+
 /*===== Qualification Section =====*/
 .qualification_container{
-    grid-template-columns: repeat(2, 450px);
+    grid-template-columns: repeat(2, 550px);
     column-gap: 3rem;
     justify-content: center;
     padding-left: 100px;
