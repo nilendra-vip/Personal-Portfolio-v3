@@ -78,9 +78,7 @@ button,input{
     margin-bottom: 48px;
     position: relative;
 }
-.section_title:hover::before{
-    scale: 1.1;
-}
+
 .section_title::before{
     transition: all .3s;
     transform-origin: center;
@@ -169,7 +167,6 @@ button,input{
 .social_share{
     font-size: 2vw;
     cursor: pointer;
-    color: red;
 }
 /* Active Link */
 .nav_link.active-link, .nav_link:hover{
