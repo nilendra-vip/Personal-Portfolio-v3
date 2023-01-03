@@ -1030,3 +1030,32 @@ textarea.input{
     border-radius: 8px;
 }
 
+
+.device_mess{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-size: 4vw;
+    width: 80%;
+}
+
+
+@media (max-width:1300px) {
+
+    #loader, .sidebar, .main{
+        display: none;
+    }
+}
+@media (min-width:1300px) {
+    .device_mess{
+        display: none;
+    }
+}
+@media (max-width:800px) {
+    .device_mess{
+        width: 60%;
+        font-size: 6vw;
+    }
+}
