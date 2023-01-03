@@ -1,3 +1,9 @@
+@font-face {
+    font-family: gilroy;
+    src: url(./Gilroy-Regular.otf);
+}
+
+
 /*=============== BASE ===============*/
 *{
     margin: 0%;
