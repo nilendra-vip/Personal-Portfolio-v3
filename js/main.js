@@ -5,75 +5,75 @@ function loader(){
 
     time.from('#n11',{
         height:"0px",
-        duration:.2,
+        duration:.11,
         delay:.5
     })
     time.from('#n12',{
         height:"0px",
-        duration:.2,
+        duration:.11,
     })
     time.from('#n13',{
         height:"0px",
-        duration:.2,
+        duration:.11,
     })
     time.to('.i-line',{
         height:"120px",
-        duration:.2,
+        duration:.11,
     })
     time.from("#loader i",{
         scale:0,
-        duration:.2,
+        duration:.11,
     })
     time.from('#l1',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#l2',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#l4',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
 
     time.from('#e1',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#e2',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#e4',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#e5',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#e6',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
 
     time.from('#n21',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#n22',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#n23',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
 
     time.from('#d1',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#d2',{
         width:"0",
@@ -81,7 +81,7 @@ function loader(){
     })
     time.from('#d4',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#d5',{
         height:"0",
@@ -89,54 +89,54 @@ function loader(){
     })
     time.from('#d7',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#d8',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
 
 
     time.from('#r1',{
         height:"0",
-        duration:.2
+        duration:.11
     })
     time.from('#r2',{
         width:"0",
-        duration:.2
+        duration:.11
     })
 
     time.from('#r3',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#r5',{
         height:"0",
-        duration:.2
+        duration:.11
     })
     time.from('#r6',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#r8',{
         width:"0",
-        duration:.2
+        duration:.11
     })
     time.from('#r9',{
         height:"0",
-        duration:.2
+        duration:.11
     })
     time.from('#a1',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#a2',{
         height:"0",
-        duration:.2,
+        duration:.11,
     })
     time.from('#a3',{
         width:"0",
-        duration:.2,
+        duration:.11,
     })
 
     time.to(".n1-line, .i-line, .l-line, .e-line, .n2-line, .d-line, .r-line, .a-line",{
