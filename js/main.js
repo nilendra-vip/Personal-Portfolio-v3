@@ -3,164 +3,18 @@ function loader(){
     // =================== LOADER =================
     var time =gsap.timeline()
 
-    time.from('#n11',{
-        height:"0px",
-        duration:.11,
-        delay:.5
-    })
-    time.from('#n12',{
-        height:"0px",
-        duration:.11,
-    })
-    time.from('#n13',{
-        height:"0px",
-        duration:.11,
-    })
-    time.to('.i-line',{
-        height:"120px",
-        duration:.11,
-    })
-    time.from("#loader i",{
-        scale:0,
-        duration:.11,
-    })
-    time.from('#l1',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#l2',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#l4',{
-        width:"0",
-        duration:.11,
-    })
-
-    time.from('#e1',{
-        width:"0",
-        duration:.11,
-    })
-    time.from('#e2',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#e4',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#e5',{
-        width:"0",
-        duration:.11,
-    })
-    time.from('#e6',{
-        width:"0",
-        duration:.11,
-    })
-
-    time.from('#n21',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#n22',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#n23',{
-        height:"0",
-        duration:.11,
-    })
-
-    time.from('#d1',{
-        width:"0",
-        duration:.11,
-    })
-    time.from('#d2',{
-        width:"0",
-        duration:.1,
-    })
-    time.from('#d4',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#d5',{
-        height:"0",
-        duration:.1,
-    })
-    time.from('#d7',{
-        width:"0",
-        duration:.11,
-    })
-    time.from('#d8',{
-        height:"0",
-        duration:.11,
-    })
-
-
-    time.from('#r1',{
-        height:"0",
-        duration:.11
-    })
-    time.from('#r2',{
-        width:"0",
-        duration:.11
-    })
-
-    time.from('#r3',{
-        width:"0",
-        duration:.11,
-    })
-    time.from('#r5',{
-        height:"0",
-        duration:.11
-    })
-    time.from('#r6',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#r8',{
-        width:"0",
-        duration:.11
-    })
-    time.from('#r9',{
-        height:"0",
-        duration:.11
-    })
-    time.from('#a1',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#a2',{
-        height:"0",
-        duration:.11,
-    })
-    time.from('#a3',{
-        width:"0",
-        duration:.11,
-    })
-
-    time.to(".n1-line, .i-line, .l-line, .e-line, .n2-line, .d-line, .r-line, .a-line",{
-        backgroundColor:'springgreen',
-        duration:1,   
-        delay:-.5
-    })
-    time.to("#loader i, #loader h2",{
-        color:"springgreen",
-        duration:.5,
-        delay:-.5
-    })
-    time.to("#loader ,#l3, #e3, #d3 ,#d6, #r4 , #r7",{
+    
+    time.to("#loader",{
         backgroundColor:'black',
         duration:1,
-        delay:-.1 
+        delay:1 
     })
     time.to("#loader",{
         scale:0,
         x:-715,
         y:-315,
-        duration:.7,
-        // borderRadius:"30%",
-        delay:.3
+        duration:1,
+        delay:.5
     })
     time.from(".nav_logo",{
         scale:0
@@ -168,12 +22,14 @@ function loader(){
     time.from(".nav_item",{
         y:-100,
         stagger:.1,
-        delay:-.5
+        delay:-.5,
+        opacity:0
     })
     time.from(".info_item",{
         y:100,
         stagger:.1,
-        delay:-1
+        delay:-1,
+        opacity:0
     })
 
 }
@@ -297,6 +153,32 @@ document.querySelectorAll(".skills_header").forEach(function(file){
 
 
 
+// ==========================Toggler=======================
+
+const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggle.addEventListener("click", function(){
+    document.querySelector(".style-switcher").classList.toggle("open");
+})
+
+// Hide style switcher on scroll
+// window.addEventListener("scroll", function(){
+//     if(document.querySelector(".style-switcher").classList.contains("open")){
+//         document.querySelector(".style-switcher").classList.remove("open");
+//     }
+// })
+
+// theme colors
+const alternateStyles = document.querySelectorAll(".alternate-style");
+function setActiveStyle(color){
+    alternateStyles.forEach((style) =>{
+        if(color === style.getAttribute("title")){
+            style.removeAttribute("disabled");
+        }
+        else{
+            style.setAttribute("disabled","true");
+        }
+    })
+}
 
 
 
